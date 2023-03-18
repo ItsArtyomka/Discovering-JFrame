@@ -1,41 +1,6 @@
-import javax.swing.JFrame;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-
 public class Main {
     public static void main(String[] args) {
-        JFrame javaFrame = new JFrame();
-        javaFrame.setSize(400,300);
-        javaFrame.setVisible(true);
-        javaFrame.addMouseListener(new SimpleClickListener());
-    }
-
-    static class SimpleClickListener implements MouseListener {
-
-        @Override
-        public void mouseClicked(MouseEvent e) {
-            System.out.println("Clicked аt " + e.getX() + "," + e.getY());
-        }
-
-        @Override
-        public void mouseEntered(MouseEvent e) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void mouseExited(MouseEvent e) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void mousePressed(MouseEvent e) {
-            // TODO Auto-generated method stub
-        }
-
-        @Override
-        public void mouseReleased(MouseEvent e) {
-            // TODO Auto-generated method stub
-        }
-
+        // Anonymous MyFrame Object that creates the window.
+        new MyFrame();
     }
 }
